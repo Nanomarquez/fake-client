@@ -16,7 +16,7 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:3001/pay",input)
+    await axios.post("/pay",input)
     .then(res=>setButton(res.data))
   }
 

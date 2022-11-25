@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
+import axios from 'axios'
 if(import.meta.env.MODE === 'development'){
   axios.defaults.baseURL = 'http://localhost:3001';
 }
